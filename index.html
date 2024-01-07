@@ -1,1 +1,93 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Geek Hub</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #0f0;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #matrix-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .matrix {
+            position: absolute;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: bold;
+            animation: animateMatrix 15s linear infinite;
+        }
+
+        @keyframes animateMatrix {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+
+        #content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #0f0;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #0f0;
+        }
+    </style>
+</head>
+<body>
+    <div id="matrix-container"></div>
+    <div id="content">
+        <h1>Welcome to my Pages</h1>
+        <p>Embrace the digital world with us.</p>
+    </div>
+
+    <script>
+        // Matrix animation
+        function createMatrix() {
+            const matrixContainer = document.getElementById('matrix-container');
+
+            for (let i = 0; i < 100; i++) {
+                const matrixElement = document.createElement('div');
+                matrixElement.className = 'matrix';
+                matrixElement.style.left = `${Math.random() * 100}%`;
+                matrixElement.style.animationDuration = `${Math.random() * 2 + 1}s`;
+                matrixElement.textContent = getRandomMatrixCharacter();
+                matrixContainer.appendChild(matrixElement);
+            }
+        }
+
+        function getRandomMatrixCharacter() {
+            const characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+            return characters.charAt(Math.floor(Math.random() * characters.length));
+        }
+
+        createMatrix();
+    </script>
+</body>
+</html>
