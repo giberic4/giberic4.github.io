@@ -58,6 +58,17 @@
             font-size: 1.2em;
             color: #0f0;
         }
+
+        .thumbnail-container {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .thumbnail {
+            max-width: 50px; /* Adjust the size as needed */
+            max-height: 50px; /* Adjust the size as needed */
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -66,14 +77,16 @@
         <h1>Welcome to my Pages</h1>
         <p>Embrace the digital world with us.</p>
     </div>
-    <div>
-        <ul id="content">              
-            <li><a href="https://thunderstore.io/package/Cheesequeens/">Lethal Company | Thunderstore</a></li>
-            <!-- <li><a href="#">Something2</a></li>
-            <li><a href="#">Something3</a></li>
-            <li><a href="#">Something4</a></li> -->
+    <div id="content">
+        <ul>              
+            <li>
+                <div class="thumbnail-container">
+                    <img class="thumbnail" src="https://cdn.akamai.steamstatic.com/steam/apps/1966720/header.jpg?t=1700231592" alt="Thumbnail">
+                </div>
+                <a href="https://thunderstore.io/package/Cheesequeens/">Lethal Company | Thunderstore</a>
+            </li>
+            <!-- Add more links as needed -->
         </ul>
-
     </div>
 
     <script>
