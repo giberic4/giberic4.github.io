@@ -1,130 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eric is a nerd</title>
-    <style>
-        body {
-            background-color: #000;
-            color: #0f0;
-            font-family: 'Courier New', Courier, monospace;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-
-        #matrix-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            pointer-events: none;
-        }
-
-        .matrix {
-            position: absolute;
-            font-size: 16px;
-            line-height: 20px;
-            font-weight: bold;
-            animation: animateMatrix 15s linear infinite;
-        }
-
-        @keyframes animateMatrix {
-            0% {
-                transform: translateY(0);
-            }
-            100% {
-                transform: translateY(-100%);
-            }
-        }
-
-        #content {
-            position: relative;
-            z-index: 1;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #0f0;
-        }
-
-        p {
-            font-size: 1.2em;
-            color: #0f0;
-        }
-
-        .thumbnail-container {
-            display: inline-block;
-            margin-right: 10px;
-        }
-
-        .thumbnail {
-            max-width: 50px; /* Adjust the size as needed */
-            max-height: 50px; /* Adjust the size as needed */
-            border-radius: 5px;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-        }
-
-        ul li a {
-            text-decoration: none;
-            color: #0f0;
-            font-size: 1.2em;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="RAAP Engineering supports government and defense stakeholders with systems engineering, technical assessment, architecture review, and mission-focused advisory services."
+  >
+  <title>RAAP Engineering | Systems Engineering and Technical Advisory</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="matrix-container"></div>
-    <div id="content">
-        <h1>Welcome to my Pages</h1>
-        <p>Embrace the digital world with us.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-shell">
+      <a class="brand" href="index.html" aria-label="RAAP Engineering home">
+        <span class="brand-mark">RAAP</span>
+        <span class="brand-text">
+          <strong>RAAP Engineering</strong>
+          <span>Systems Engineering and Technical Advisory</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="is-active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-    <div id="content">
-        <ul>              
-            <li>
-                <div class="thumbnail-container">
-                    <img class="thumbnail" src="https://cdn.akamai.steamstatic.com/steam/apps/1966720/header.jpg?t=1700231592" alt="Thumbnail">
-                </div>
-                <a href="https://thunderstore.io/c/lethal-company/p/Cheesequeens/CheeseQueenModPack/">Lethal Company | Thunderstore</a>
-            </li>
-            <!-- Add more links as needed -->
-        </ul>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Government-Facing Engineering Support</p>
+          <h2>Technical depth for organizations that need clarity, rigor, and credible execution.</h2>
+          <p class="lead">
+            RAAP Engineering is a small, focused firm supporting defense and mission-oriented customers with
+            systems engineering leadership, technical assessment, architecture review, and advisory support.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="contact.html">Request a Capability Discussion</a>
+            <a class="button button-secondary" href="about.html">Review Leadership Experience</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Company highlights">
+          <p class="panel-kicker">Why RAAP Engineering</p>
+          <ul class="panel-list">
+            <li>40+ years of senior technical leadership represented in founding experience</li>
+            <li>Background spanning DoD, NASA, missile defense, and enterprise architecture</li>
+            <li>Procurement-friendly, disciplined, and mission-aware communication</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">Core Capabilities</p>
+          <h2>Support areas aligned to complex defense and mission environments.</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Systems Engineering Leadership</h3>
+            <p>
+              Structured engineering support for planning, integration, verification, and lifecycle decision-making
+              across complex technical efforts.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Verification and Assessment</h3>
+            <p>
+              Experience shaping verification strategies, test-aligned engineering methods, and assessment approaches
+              for high-consequence programs.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Aerospace Simulation Support</h3>
+            <p>
+              Software development, debugging, and sustainment support for mission-focused training systems in secure,
+              government-facing aerospace environments.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Technical Documentation and Test Delivery</h3>
+            <p>
+              Clear, technically grounded writing for systems engineering guidance, software notes, test procedures,
+              and validation support materials.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-accent">
+      <div class="shell split-layout">
+        <div>
+          <p class="eyebrow">Differentiators</p>
+          <h2>Built around credibility, not volume.</h2>
+        </div>
+        <div class="stack">
+          <article class="feature">
+            <h3>Senior-level perspective</h3>
+            <p>
+              RAAP Engineering is positioned to bring seasoned judgment to technically demanding efforts where
+              program context, engineering discipline, and communication quality matter.
+            </p>
+          </article>
+          <article class="feature">
+            <h3>Mission familiarity</h3>
+            <p>
+              Team experience spans defense acquisition, missile defense, NASA strategic programs, enterprise
+              architecture assessment, and Air Force simulator sustainment and verification support.
+            </p>
+          </article>
+          <article class="feature">
+            <h3>Adaptable engagement model</h3>
+            <p>
+              The site is structured to support future capability statements, teaming narratives, and qualification
+              details as RAAP Engineering expands its public-facing materials.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">Relevant Experience Snapshot</p>
+          <h2>Representative domains reflected across founder and co-owner experience.</h2>
+        </div>
+        <div class="timeline-grid">
+          <article class="timeline-card">
+            <span class="timeline-label">Defense and National Security</span>
+            <p>
+              Experience supporting Office of the Secretary of Defense functions, missile defense initiatives, and
+              engineering-focused government environments.
+            </p>
+          </article>
+          <article class="timeline-card">
+            <span class="timeline-label">NASA and Human Spaceflight Support</span>
+            <p>
+              Prior work connected to strategic exploration planning and human-rated system development environments.
+            </p>
+          </article>
+          <article class="timeline-card">
+            <span class="timeline-label">Aerospace Simulation and Verification</span>
+            <p>
+              Experience supporting Air Force simulator platforms, resolving mismatches against real aircraft
+              behavior, and participating in contractor and government verification workflows.
+            </p>
+          </article>
+          <article class="timeline-card">
+            <span class="timeline-label">Education and Technical Communication</span>
+            <p>
+              Teaching and curriculum leadership that reinforce RAAP Engineering's ability to communicate complex
+              topics clearly and support stakeholder understanding.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="shell credibility-grid">
+        <div>
+          <p class="eyebrow">Leadership Credibility</p>
+          <h2>Founding experience anchored by senior systems engineering and current aerospace simulation support.</h2>
+        </div>
+        <div class="credibility-stack">
+          <div class="credibility-card">
+            <h3>Mark Gibson</h3>
+            <p>
+              Mark Gibson brings decades of experience across aerospace, defense, systems engineering, verification,
+              architecture assessment, and technical policy support. His background includes Air Force, NASA, Missile
+              Defense Agency, defense contracting, and higher education roles.
+            </p>
+            <ul class="inline-list">
+              <li>MS, Systems Engineering</li>
+              <li>BS, Mechanical Engineering</li>
+              <li>Active clearance referenced at a high level</li>
+            </ul>
+          </div>
+          <div class="credibility-card">
+            <h3>Eric Gibson</h3>
+            <p>
+              Eric Gibson supports aerospace simulation systems in U.S. Air Force training environments, with
+              experience in software development, verification support, technical documentation, discrepancy
+              resolution, and secure delivery workflows.
+            </p>
+            <ul class="inline-list">
+              <li>BS, Computer Science</li>
+              <li>CompTIA A+ and Security+</li>
+              <li>Active Secret clearance referenced at a high level</li>
+            </ul>
+            <a class="text-link" href="about.html">See team profiles</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">Contractor Skills Matrix</p>
+          <h2>Public-facing technical coverage aligned to defense and aerospace support.</h2>
+        </div>
+        <div class="matrix-grid">
+          <article class="card">
+            <h3>Engineering and Development</h3>
+            <p>
+              C, C++, C#, Fortran, WPF, legacy code modernization, automated testing, and software integration in
+              secure training environments.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Platforms and Tooling</h3>
+            <p>
+              Red Hat Linux, Windows 11, WSL, Git, GitLab, Docker, Postman, PowerShell, and Bash across day-to-day
+              development and deployment support.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Verification and Documentation</h3>
+            <p>
+              Contractor verification testing, government verification testing, discrepancy correction, test setup,
+              validation support, and technical procedure writing.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-accent">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">Representative Project Experience</p>
+          <h2>CymSTAR work that reflects current aerospace simulation capability.</h2>
+        </div>
+        <div class="timeline-grid">
+          <article class="timeline-card">
+            <span class="timeline-label">Air Force Simulator Sustainment</span>
+            <p>
+              Support development, maintenance, and debugging for simulator environments tied to E-4B, A-10, KC-135,
+              and C-5 aircraft training systems.
+            </p>
+          </article>
+          <article class="timeline-card">
+            <span class="timeline-label">Discrepancy Resolution</span>
+            <p>
+              Investigate simulation mismatches against aircraft documentation and coordinate with stakeholders to
+              improve fidelity, reliability, and training realism.
+            </p>
+          </article>
+          <article class="timeline-card">
+            <span class="timeline-label">Verification Event Support</span>
+            <p>
+              Set up contractor and government verification test environments, track defects, fix discrepancies, and
+              support validation through acceptance activities at Air Force bases.
+            </p>
+          </article>
+          <article class="timeline-card">
+            <span class="timeline-label">Modernization and Delivery</span>
+            <p>
+              Contribute to Windows 11 migration work, WPF interface updates, hardware and software integration, and
+              technical documentation for controlled deployment environments.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="shell cta-layout">
+        <div>
+          <p class="eyebrow">Next Step</p>
+          <h2>Use this site as the first point of contact for capability discussions and teaming outreach.</h2>
+        </div>
+        <a class="button button-primary" href="contact.html">Open Contact Page</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-shell">
+      <div>
+        <strong>RAAP Engineering</strong>
+        <p>Small-firm engineering support for defense, aerospace, and mission-driven organizations.</p>
+      </div>
+      <div class="footer-meta">
+        <span>Business identifiers available upon request</span>
+        <span>Capability statement planned for a future release</span>
+      </div>
     </div>
-
-    <script>
-        // Matrix animation
-        function createMatrix() {
-            const matrixContainer = document.getElementById('matrix-container');
-
-            for (let i = 0; i < 100; i++) {
-                const matrixElement = document.createElement('div');
-                matrixElement.className = 'matrix';
-                matrixElement.style.left = `${Math.random() * 100}%`;
-                matrixElement.style.animationDuration = `${Math.random() * 2 + 1}s`;
-                matrixElement.textContent = getRandomMatrixCharacter();
-                matrixContainer.appendChild(matrixElement);
-            }
-        }
-
-        function getRandomMatrixCharacter() {
-            const characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-            return characters.charAt(Math.floor(Math.random() * characters.length));
-        }
-
-        createMatrix();
-    </script>
+  </footer>
 </body>
 </html>
