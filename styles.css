@@ -207,7 +207,7 @@ img {
 .panel-kicker,
 .timeline-label,
 .detail-block span,
-.contact-placeholder span,
+.contact-detail span,
 .identifier-list span {
   font-size: 0.8rem;
   letter-spacing: 0.12em;
@@ -437,6 +437,27 @@ h3 {
   color: #dfe8f1;
 }
 
+.person-link-card {
+  display: block;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.person-link-card:hover,
+.person-link-card:focus-visible {
+  transform: translateY(-3px);
+  border-color: rgba(198, 167, 102, 0.55);
+  box-shadow: 0 28px 60px rgba(21, 32, 43, 0.16);
+}
+
+.person-link-card:focus-visible {
+  outline: 3px solid rgba(198, 167, 102, 0.35);
+  outline-offset: 3px;
+}
+
+.person-link-card .text-link {
+  margin-top: 1.2rem;
+}
+
 .text-link {
   display: inline-block;
   margin-top: 1rem;
@@ -468,7 +489,7 @@ h3 {
 }
 
 .detail-block,
-.contact-placeholder,
+.contact-detail,
 .identifier-list div {
   display: flex;
   flex-direction: column;
@@ -479,18 +500,14 @@ h3 {
 }
 
 .detail-block strong,
-.contact-placeholder strong,
+.contact-detail strong,
 .identifier-list strong {
   font-size: 1rem;
 }
 
-.placeholder-card {
+.profile-card-soft {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(245, 240, 232, 0.96));
-}
-
-.placeholder-note {
-  font-style: italic;
 }
 
 .identifier-list {
